@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="keyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:background">@drawable/round_btn</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

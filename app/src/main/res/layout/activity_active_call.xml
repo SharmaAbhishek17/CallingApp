@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E48"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/ic_person"
+        android:tint="#FFFFFF"
+        android:background="@drawable/circle_bg"
+        android:padding="25dp"/>
+
+    <TextView
+        android:id="@+id/activeNumber"
+        android:text="9876543210"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- ⏱ Timer -->
+    <TextView
+        android:id="@+id/timerText"
+        android:text="00:00"
+        android:textColor="#AAAAAA"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/muteBtn"
+            android:layout_width="70dp"
+            android:background="@drawable/circle_bg"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_mic_off"
+            />
+
+        <ImageButton
+            android:id="@+id/speakerBtn"
+            android:layout_width="70dp"
+            android:layout_margin="15dp"
+            android:layout_height="70dp"
+            android:background="@drawable/circle_bg"
+            android:src="@drawable/ic_speaker"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/endCallBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_call_end"
+        android:background="@drawable/red_circle"
+        android:padding="15dp"/>
+
+
+</LinearLayout>

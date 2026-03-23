@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2E2E48"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/nameDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#AAAAAA"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp">
+
+
+        <TextView
+            android:id="@+id/numberDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:letterSpacing="0.15"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_input_delete"
+            android:background="@android:color/transparent"
+            android:tint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <GridLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_gravity="center">
+
+        <Button style="@style/keyStyle" android:text="1"/>
+        <Button style="@style/keyStyle" android:text="2"/>
+        <Button style="@style/keyStyle" android:text="3"/>
+
+        <Button style="@style/keyStyle" android:text="4"/>
+        <Button style="@style/keyStyle" android:text="5"/>
+        <Button style="@style/keyStyle" android:text="6"/>
+
+        <Button style="@style/keyStyle" android:text="7"/>
+        <Button style="@style/keyStyle" android:text="8"/>
+        <Button style="@style/keyStyle" android:text="9"/>
+
+        <Button style="@style/keyStyle" android:text="*"/>
+        <Button style="@style/keyStyle" android:text="0"/>
+        <Button style="@style/keyStyle" android:text="#"/>
+
+    </GridLayout>
+
+
+    <ImageButton
+        android:id="@+id/callBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/call_glow"
+        android:src="@drawable/ic_call_accept"
+        android:tint="#FFFFFF"/>
+
+</LinearLayout>

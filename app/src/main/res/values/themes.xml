@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Theme.CallingApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize if needed -->
+    </style>
+
+</resources>
