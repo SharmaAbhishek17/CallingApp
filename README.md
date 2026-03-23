@@ -32,7 +32,4 @@ A basic Calling App built using Kotlin that simulates real call flow. It demonst
 
 The app uses multiple activities to simulate real calling behavior. State transitions are managed using intents and controlled UI logic.
 
-## 📌 Note
-
-This is a UI-based simulation. No real SIM or calling functionality is used.
 
